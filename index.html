@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+      .main {
+        font-family: "League Spartan", serif;
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Primary
+              "very-dark-magenta": "hsl(300, 43%, 22%)",
+              "soft-pink": "hsl(333, 80%, 67%)",
+
+              // Neutral
+              "dark-grayish-magenta": "hsl(303, 10%, 53%)",
+              "light-grayish-magenta": "hsl(300, 24%, 96%)",
+              white: "hsl(0, 0%, 100%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- <img src="./assets/images/bg-pattern-bottom-desktop.svg" alt="" /> -->
+    <main
+      class="main relative min-h-screen flex flex-col items-center justify-center before:content-['' before:bg-[url('./assets/images/bg-pattern-top-mobile.svg')] sm:before:bg-[url('./assets/images/bg-pattern-top-desktop.svg')] before:absolute before:w-[374px] sm:before:w-[584px] before:h-[232px] sm:before:h-[362px] before:top-0 before:left-0 after:content-[''] after:bg-[url('./assets/images/bg-pattern-bottom-mobile.svg')] sm:after:bg-[url('./assets/images/bg-pattern-bottom-desktop.svg')] after:absolute after:w-[375px] sm:after:w-[1085px] after:h-[503px] sm:after:h-[673px] after:bottom-0 after:right-0 bg-white"
+    >
+      <div class="w-[90%] xl:w-[75%] z-10 my-10">
+        <div
+          class="flex items-center justify-between flex-col md:flex-row gap-y-10"
+        >
+          <div>
+            <h1
+              class="text-4xl lg:text-6xl font-bold text-very-dark-magenta mx-auto sm:mx-0 w-[70%] sm:w-auto lg:w-96 leading-[2rem] lg:leading-[3rem] text-center md:text-start"
+            >
+              10,000+ of our users love our products.
+            </h1>
+            <h2
+              class="mt-5 sm:mt-7 text-base lg:text-lg text-dark-grayish-magenta font-medium lg:w-[28rem] text-center md:text-start"
+            >
+              We only provide great products combined with excellent customer
+              service. See what our satisfied customers are saying about our
+              services.
+            </h2>
+          </div>
+          <div class="space-y-4 w-full sm:w-auto">
+            <div
+              class="flex flex-col sm:flex-row gap-y-2 items-center bg-light-grayish-magenta gap-x-5 lg:gap-x-7 sm:w-[24rem] lg:w-[25rem] xl:w-[28rem] py-3 sm:py-4 pl-5 lg:pl-9 rounded-md"
+            >
+              <div class="flex items-center gap-x-2">
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+              </div>
+              <span class="text-very-dark-magenta font-bold"
+                >Rated 5 Stars in Reviews</span
+              >
+            </div>
+            <div
+              class="flex flex-col sm:flex-row gap-y-2 items-center bg-light-grayish-magenta gap-x-5 lg:gap-x-7 sm:w-[24rem] lg:w-[25rem] xl:w-[28rem] py-3 sm:py-4 pl-5 lg:pl-9 rounded-md md:ml-12"
+            >
+              <div class="flex items-center gap-x-2">
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+              </div>
+              <span class="text-very-dark-magenta font-bold"
+                >Rated 5 Stars in Report Guru</span
+              >
+            </div>
+            <div
+              class="flex flex-col sm:flex-row gap-y-2 items-center bg-light-grayish-magenta gap-x-5 lg:gap-x-7 sm:w-[24rem] lg:w-[25rem] xl:w-[28rem] py-3 sm:py-4 pl-5 lg:pl-9 rounded-md md:ml-24"
+            >
+              <div class="flex items-center gap-x-2">
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+                <img src="./assets/images/icon-star.svg" alt="icon-star" />
+              </div>
+              <span class="text-very-dark-magenta font-bold"
+                >Rated 5 Stars in BestTech</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row gap-x-5 lg:gap-x-7 items-start mt-11 sm:mt-16 lg:mt-20"
+        >
+          <div
+            class="bg-very-dark-magenta text-white rounded-lg px-5 lg:px-5 lg:px-9 py-9"
+          >
+            <div class="flex items-center gap-x-6">
+              <img
+                class="rounded-full w-10 h-10"
+                src="./assets/images/image-colton.jpg"
+                alt="image-colton"
+              />
+              <div class="flex flex-col">
+                <span class="font-bold">Colton Smith</span>
+                <span class="text-soft-pink">Verified Buyer</span>
+              </div>
+            </div>
+            <span class="block mt-6">
+              " We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we also
+              received it in time. Excellent! "
+            </span>
+          </div>
+          <div
+            class="bg-very-dark-magenta text-white rounded-lg px-5 lg:px-9 py-9 mt-4"
+          >
+            <div class="flex items-center gap-x-6">
+              <img
+                class="rounded-full w-10 h-10"
+                src="./assets/images/image-irene.jpg"
+                alt="image-irene"
+              />
+              <div class="flex flex-col">
+                <span class="font-bold">Irene Roberts</span>
+                <span class="text-soft-pink">Verified Buyer</span>
+              </div>
+            </div>
+            <span class="block mt-6">
+              " Customer service is always excellent and very quick turn around.
+              Completely delighted with the simplicity of the purchase and the
+              speed of delivery. "
+            </span>
+          </div>
+          <div
+            class="bg-very-dark-magenta text-white rounded-lg px-5 lg:px-9 py-9 mt-4 md:mt-8"
+          >
+            <div class="flex items-center gap-x-6">
+              <img
+                class="rounded-full w-10 h-10"
+                src="./assets/images/image-anne.jpg"
+                alt="image-anne"
+              />
+              <div class="flex flex-col">
+                <span class="font-bold">Anne Wallace</span>
+                <span class="text-soft-pink">Verified Buyer</span>
+              </div>
+            </div>
+            <span class="block mt-6">
+              " Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone! "
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
